@@ -46,8 +46,8 @@ class WebcamVideoStream:
         # initialize the video camera stream and read the first frame
         # from the stream
         self.stream = cv2.VideoCapture(src)
-        self.stream.set(cv2.CAP_PROP_FRAME_WIDTH, width)
-        self.stream.set(cv2.CAP_PROP_FRAME_HEIGHT, height)
+        self.stream.set(cv2.cv.CV_CAP_PROP_FRAME_WIDTH, width)
+        self.stream.set(cv2.cv.CV_CAP_PROP_FRAME_HEIGHT, height)
         (self.grabbed, self.frame) = self.stream.read()
 
         # initialize the variable used to indicate if the thread should
