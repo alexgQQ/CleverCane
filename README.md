@@ -10,20 +10,22 @@ The goal in mind is to have an object detection system for head height objects n
 
 The whole system uses multiprocessing to spawn processes for each subsystem. A main process will control data flow and general decision making while subprocesses run video streaming, object detection, sonar gathering and audio functionality. 
 
+This will require sudo permisions on the system. 
+
 To install dependencies, run:
-'''
+```
 ./config/setup.sh install
-'''
+```
 
 To check functionality, run:
-'''
+```
 ./config/setup.sh no-deps
-'''
+```
 
 To start the whole system(after installing dependencies), run
-'''
+```
 python run.py
-'''
+```
 
 Each module file in the home directory can runon its own for further testing/debugging.
 Stay tuned for more. 
